@@ -1,102 +1,34 @@
-🌱 Localizador de Reciclagem
+# Localizador de Reciclagem
 
-O Localizador de Reciclagem é um aplicativo mobile desenvolvido com React Native (Expo) que permite localizar, cadastrar e visualizar pontos de coleta de resíduos recicláveis.
-O app também inclui uma seção educativa, oferecendo informações sobre Plástico, Papel, Vidro e Metal para incentivar a conscientização ambiental.
+**Localizador de Reciclagem** é um aplicativo mobile (Expo + React Native) para localizar, cadastrar e visualizar pontos de coleta de resíduos (plástico, papel, vidro, metal). O app também possui uma seção educativa com informações detalhadas sobre cada tipo de material reciclável.
 
-🚀 Funcionalidades
-📍 Pontos de Coleta
+---
 
-Cadastrar novos pontos com:
+## Funcionalidades
 
-Nome
+- Cadastro de pontos de coleta com nome, tipo, foto e localização (GPS).
+- Visualização dos pontos em um mapa interativo (react-native-maps).
+- Lista de pontos com opção de editar e excluir.
+- Tela de informações com páginas dedicadas para Plástico, Papel, Vidro e Metal.
+- Perfil do usuário com contagem de pontos cadastrados.
+- Armazenamento local via AsyncStorage (sincronização online futura possível).
 
-Tipo de material coletado
+---
 
-Foto
+## Tecnologias
 
-Localização via GPS
+- React Native (Expo)
+- Expo SDK (expo-location, expo-image-picker)
+- react-native-maps
+- @react-navigation/native (stack + bottom-tabs)
+- @react-native-async-storage/async-storage
 
-Visualização no mapa interativo (react-native-maps)
+---
 
-Edição e exclusão de pontos
+## Educação Ambiental
+**Páginas dedicadas para cada tipo de material**:
 
-Lista completa de pontos cadastrados
-
-📘 Educação Ambiental
-
-Páginas dedicadas para cada tipo de material:
-
-Plástico
-
-Papel
-
-Vidro
-
-Metal
-
-👤 Perfil do Usuário
-
-Total de pontos cadastrados
-
-Dados armazenados localmente via AsyncStorage
-
-🧰 Tecnologias Utilizadas
-
-React Native (Expo)
-
-Expo SDK
-
-expo-location
-
-expo-image-picker
-
-react-native-maps
-
-AsyncStorage
-
-React Navigation (Stack + Bottom Tabs)
-
-📂 Estrutura do Projeto
-
-Aqui está uma estrutura profissional e clara do seu repositório:
-
-localizador-reciclagem/
-│
-├── src/
-│   ├── components/
-│   │   ├── MapMarker.js
-│   │   └── MaterialCard.js
-│   │
-│   ├── screens/
-│   │   ├── HomeScreen.js
-│   │   ├── MapScreen.js
-│   │   ├── AddPointScreen.js
-│   │   ├── EditPointScreen.js
-│   │   ├── ListPointsScreen.js
-│   │   ├── ProfileScreen.js
-│   │   └── materials/
-│   │       ├── PlasticScreen.js
-│   │       ├── PaperScreen.js
-│   │       ├── GlassScreen.js
-│   │       └── MetalScreen.js
-│   │
-│   ├── data/
-│   │   └── materialsInfo.js
-│   │
-│   ├── storage/
-│   │   └── pointsStorage.js
-│   │
-│   ├── hooks/
-│   │   └── useLocation.js
-│   │
-│   └── utils/
-│       └── validateFields.js
-│
-├── assets/
-│   ├── icons/
-│   └── images/
-│
-├── App.js
-├── package.json
-├── app.json
-└── README.md
+- Plástico
+- Papel
+- Vidro
+- Metal
